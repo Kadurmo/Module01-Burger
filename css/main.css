@@ -42,6 +42,85 @@ body {
     border-radius: 1.5px;
     background: transparent;
 }
-.header-nav a.active::after {
+.header-nav a:hover:after {
     background: #FFC725;
+}
+.button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    gap: 10px;
+}
+.button-item {
+    position: relative;
+}
+.button-count {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    background: #F37335;
+    border-radius: 100%;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    line-height: 1.3;
+    bottom: 3px;
+    left: 18px;
+}
+.button-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #443737;
+    font-size: 15px;
+    font-weight: 700;
+}
+/*-------------BG-MENU--------------*/
+.bg {
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/bg-menu.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 142px 0;
+}
+.breadcrumbs {
+    padding-left: 0;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+}
+.breadcrumbs a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #DEDEDE;
+    font-size: 15px;
+}
+.breadcrumbs a::before {
+    content: "/";
+    position: relative;
+    left: -6px;
+    
+}
+.breadcrumbs li:first-child a::before {
+    display: none;
+}
+.title {
+    font-size: 79px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 11px;
+}
+.description {
+    font-family: 'Open Sans', sans-serif;
+    color: #DEDEDE;
+    font-size: 15px;
+    line-height: 160%;
+    font-weight: 400;
+    max-width: 320px;
+    margin: 0 auto;
 }
