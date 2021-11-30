@@ -7,6 +7,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -42,7 +45,10 @@ body {
     border-radius: 1.5px;
     background: transparent;
 }
-.header-nav a:hover:after {
+.header-nav a:hover{
+    color: #FFC725;
+}
+.header-nav a.active:after {
     background: #FFC725;
 }
 .button {
@@ -52,6 +58,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item {
     position: relative;
@@ -92,19 +99,26 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    
 }
 .breadcrumbs a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: #DEDEDE;
     font-size: 15px;
+    line-height: 140%;
+    font-weight: 400;
+}
+.breadcrumbs a:hover {
+    color: #FFC725;
 }
 .breadcrumbs a::before {
     content: "/";
     position: relative;
     left: -6px;
-    
+    pointer-events: none;
+}
+.breadcrumbs a::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
     display: none;
@@ -112,8 +126,8 @@ body {
 .title {
     font-size: 79px;
     font-weight: 700;
-    margin-top: 8px;
-    margin-bottom: 11px;
+    margin-top: 16px;
+    margin-bottom: 20px;
 }
 .description {
     font-family: 'Open Sans', sans-serif;
@@ -123,4 +137,55 @@ body {
     font-weight: 400;
     max-width: 320px;
     margin: 0 auto;
+}
+/*-------------BANNER--------------*/
+.banner {
+
+}
+.banner-box {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 0 123px 100px;
+    margin: 140px 0;
+    color: #fff;
+}
+.banner-title {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 0;
+}
+.banner-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 126%;
+    text-transform: uppercase;
+    background: #F37335;
+    border-radius: 14px;
+    padding: 5px 18px;
+}
+.banner-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 320px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.banner-link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 126%;
+    color: #1E2F40;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #FBB731;
+    border-radius: 5px;
+    padding: 20px 26px;
+    margin: 0;
+    margin-top: 20px;
 }
