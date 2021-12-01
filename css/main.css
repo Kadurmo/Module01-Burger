@@ -139,9 +139,6 @@ header {
     margin: 0 auto;
 }
 /*-------------BANNER--------------*/
-.banner {
-
-}
 .banner-box {
     background-image: url(../img/banner.png);
     background-size: cover;
@@ -155,6 +152,7 @@ header {
     font-weight: 900;
     line-height: 120%;
     margin: 0;
+    margin-top: 38px;
 }
 .banner-title span {
     font-family: 'Open Sans', sans-serif;
@@ -162,9 +160,13 @@ header {
     font-weight: 600;
     line-height: 126%;
     text-transform: uppercase;
-    background: #F37335;
+    background-color: #F37335;
     border-radius: 14px;
-    padding: 5px 18px;
+    padding: 5px 0;
+    display: block;
+    max-width: 96px;
+   /* margin-top: 38px;*/
+    text-align: center;
 }
 .banner-text {
     font-family: 'Open Sans', sans-serif;
@@ -173,7 +175,7 @@ header {
     line-height: 160%;
     max-width: 320px;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 35px;
 }
 .banner-link {
