@@ -19,6 +19,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../img/logo.svg);
@@ -187,7 +193,12 @@ header {
     text-decoration: none;
     background: #FBB731;
     border-radius: 5px;
-    padding: 20px 26px;
+    padding: 18px 24px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 /*-------------MENU--------------*/
 .menu-header {
@@ -217,6 +228,7 @@ header {
     background-size: 12.79px 9.75px;
     background-repeat: no-repeat;
     background-position: 90% center;
+    outline: none;
 }
 .menu-grid {
     display: grid;
@@ -259,7 +271,7 @@ header {
     margin-bottom: 23px;
 }
 .menu-grid-btn {
-    background-color: #FBB731;
+    background: #FBB731;
     border-radius: 5px;
     border: none;
     padding: 7px 33px;
@@ -269,6 +281,9 @@ header {
     align-items:center;
     justify-content: center;
     gap: 9px;
+}
+.menu-grid-btn:hover {
+    background:  #F37335
 }
 .menu-grid-icon {
     background-image: url(../img/cart-menu.svg);
@@ -316,7 +331,7 @@ header {
     text-transform: uppercase;
     margin: 2px 24px 19px 15px;
 }
-.footer-item li {
+.footer-list li {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #FAF9F9;
@@ -325,10 +340,13 @@ header {
     margin-top: 10px;
     margin-left: 16px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list a:hover {
+    color:#FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -336,12 +354,17 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel {
+    margin-top: 4px;
+}
+.footer-list-tel li {
+    margin-bottom: 15px;
+}
+.footer-list-tel a {
     font-size: 20px;
     font-weight: 800;
     color: #FBB731;
-    margin-top: 4px;
 }
-.footer-tel li {
-    margin-bottom: 15px;
+.footer-list-tel a:hover {
+    color: #DEDEDE;
 }
