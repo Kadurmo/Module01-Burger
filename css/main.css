@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
 }
 .header-item {
     display: flex;
@@ -105,7 +105,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 4px;
 }
 .breadcrumbs a {
     font-family: 'Open Sans', sans-serif;
@@ -121,7 +121,7 @@ header {
 .breadcrumbs a::before {
     content: "/";
     position: relative;
-    left: -6px;
+    left: 0px;
     pointer-events: none;
 }
 .breadcrumbs a::before {
@@ -151,7 +151,7 @@ header {
     background-size: cover;
     background-position: center center;
     padding: 101px 0 120px 101px;
-    margin: 138px 0 100px;
+    margin: 139px 0 100px;
     color: #fff;
 }
 .banner-title {
@@ -234,7 +234,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
-    margin-bottom: 104px;
+    margin-bottom: 100px;
 }
 .menu-grid-cover {
     width: 100%;
@@ -268,13 +268,13 @@ header {
     text-align: center;
     color: #979797;
     margin-top: 5px;
-    margin-bottom: 23px;
+    margin-bottom: 19px;
 }
 .menu-grid-btn {
     background: #FBB731;
     border-radius: 5px;
     border: none;
-    padding: 7px 33px;
+    padding: 10px 33px;
     cursor: pointer;
     display: flex;
     margin: 0 auto;
@@ -306,8 +306,8 @@ header {
     background: #1E2F40;
     color: #fff;
     padding-top: 117px;
-    padding-bottom: 100px;
-    margin-top: 142px;
+    padding-bottom: 95px;
+    margin-top: 140px;
 }
 .footer-box {
     display: flex;
@@ -338,7 +338,7 @@ header {
     font-weight: 700;
     line-height: 150%;
     margin-top: 10px;
-    margin-left: 16px;
+    margin-left: 15px;
 }
 .footer-list a {
     color: #DEDEDE;
@@ -352,10 +352,10 @@ header {
     color: #DEDEDE;
     display: block;
     font-weight: 400;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 .footer-list-tel {
-    margin-top: 4px;
+    margin-top: 1px;
 }
 .footer-list-tel li {
     margin-bottom: 15px;
