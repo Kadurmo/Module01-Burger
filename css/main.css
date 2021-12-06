@@ -1,6 +1,149 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
+/*-------------STYLE-INDEX--------------*/
+.main {
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+}
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    color: #FAF9F9;
+    flex: 0 0 580px;
+    padding-top: 92px;
+    padding-bottom: 170px;
+}
+.content-title {
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 116%;
+    margin-bottom: 34px;
+}
+.content-title span {
+    color: #FBB731;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 127%;
+    display: block;
+    margin-bottom: 13px;
+}
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    line-height: 137%;
+    margin-bottom: 50px;
+}
+.content-link {
+    color: #1E2F40;
+    background-color: #FBB731;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px 45px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 128%;
+    text-align: center;
+}
+.visual {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.visual-bg {
+    width: 432px;
+    height: 100%;
+    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+    margin-left: 168px;
+}
+.main img {
+    width: 829px;
+    height: 860px;
+    position: absolute;
+    right: -168px;
+}
+/*--------------------PROMO--------------------------*/
+.promo {
+    padding-top: 185px;
+    padding-bottom: 45px;
+    color: #fff;
+}
+.promo-left,
+.promo-right {
+    flex: 0 0 49%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promo-left {
+    background-image: url(../img/burg1.png);
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+}
+.promo-right {
+    background-image: url(../img/burg2.png);
+    padding-top: 100px;
+    padding-left: 40px;
+}
+.sale {
+    background-color: #F37335;
+    border-radius: 14px;
+    padding: 5px 18px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 128%;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.cost {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 127%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.free {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 128%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.promo-discription {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #FAF9F9;
+    margin-top: 11px;
+}
+.promo-left .promo-discription {
+    max-width: 390px;
+}
+.promo-right .promo-discription {
+    max-width: 310px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
 /*-------------HEADER--------------*/
 .container {
     max-width: 1180px;
