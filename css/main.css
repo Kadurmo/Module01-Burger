@@ -292,7 +292,7 @@ header {
     background-size: cover;
     background-position: center center;
     padding: 101px 0 120px 101px;
-    margin: 139px 0 100px;
+    margin: 139px 0 80px;
     color: #fff;
 }
 .banner-title {
@@ -336,12 +336,16 @@ header {
     border-radius: 5px;
     padding: 18px 24px;
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
 }
 /*-------------MENU--------------*/
+.menu {
+    padding-top: 20px;
+}
 .menu-header {
     display: flex;
     align-items: center;
@@ -422,6 +426,7 @@ header {
     align-items:center;
     justify-content: center;
     gap: 9px;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover {
     background:  #F37335
@@ -461,6 +466,7 @@ header {
 .footer-list {
     padding-left: 0;
     list-style-type: none;
+    transition: 0.2s;
 }
 .footer-item {
     flex: 0 0 auto;
@@ -497,6 +503,7 @@ header {
 }
 .footer-list-tel {
     margin-top: 1px;
+    transition: 0.2s;
 }
 .footer-list-tel li {
     margin-bottom: 15px;
@@ -508,4 +515,27 @@ header {
 }
 .footer-list-tel a:hover {
     color: #DEDEDE;
+}
+.button-up {
+    background: #FBB731;
+    border-radius: 8px;
+    padding: 7px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
+.button-up:hover {
+    background: #F37335;
 }
