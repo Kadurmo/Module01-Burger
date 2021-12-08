@@ -586,4 +586,21 @@ header {
         position: relative;
         top: 160px;
     }
+    .footer {
+        padding-top: 62px;
+        padding-bottom: 56px;
+        margin-top: 140px;
+    }
+    .footer-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-tel {
+        padding-bottom: 5px;
+    }
+
+    .footer-list-tel li {
+        margin-top: 0px;
+        margin-left: 140px;
+    }
 }
