@@ -289,6 +289,7 @@ header {
 /*-------------BANNER--------------*/
 .banner-box {
     background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 101px 0 120px 101px;
@@ -538,4 +539,51 @@ header {
 }
 .button-up:hover {
     background: #F37335;
+}
+/*------------- MEDIA--------------*/
+@media (max-width: 980px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding-left: 40px;
+        margin-top: 0;
+        margin-bottom: 62px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+        margin-bottom: 88px;
+    }
+    .menu-grid-mobile {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x proximity;
+        scroll-snap-align: start;
+    }
+    
+    .menu-grid-mobile .menu-grid-cover {
+        height: 320px;
+        width: 274px;
+    }
+    
+    .menu-grid-mobile .menu-grid-cover img {
+        position: relative;
+        top: 160px;
+    }
 }
