@@ -793,6 +793,16 @@ header {
     .header {
         padding: 21px 16px 21px 6px;
     }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px 15px;
+        margin-bottom: 68px;
+        margin-left: 4px;
+        margin-right: 6px;
+    }
+    .footer {
+        padding-left: 8px;
+    }
 
 }
 @media (max-width: 360px) {
