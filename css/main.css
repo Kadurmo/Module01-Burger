@@ -667,7 +667,7 @@ header {
     .footer-tel {
         display: block;
         position: absolute;
-        left: 128px;
+        right: 15px;
     }
     .footer-list + .footer-list-tel {
         display: none;
