@@ -375,6 +375,7 @@ header {
     background-repeat: no-repeat;
     background-position: 90% center;
     outline: none;
+    background-color: #fff;
 }
 .menu-grid {
     display: grid;
@@ -622,8 +623,6 @@ header {
     }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px 15px;
-        margin-bottom: 88px;
     }
     .menu-grid-mobile {
         display: flex;
@@ -631,17 +630,6 @@ header {
         scroll-snap-type: x proximity;
         scroll-snap-align: start;
     }
-    
-    .menu-grid-mobile .menu-grid-cover {
-        height: 320px;
-        width: 274px;
-    }
-    /*
-    .menu-grid-mobile .menu-grid-cover img {
-        position: relative;
-        top: 160px;
-    }*/
-
     .footer-tel {
         display: none;
     }
@@ -674,7 +662,7 @@ header {
     }
     .footer {
         padding-top: 59px;
-        padding-bottom: 145px;
+        padding-bottom: 45px;
         margin-top: 0;
     }
     .footer-logo {
@@ -690,26 +678,6 @@ header {
         margin-top: 10px;
         margin-left: 5px;
     }
-
-    /*
-    .footer-item  .footer-list + .footer-list-tel {
-        position: relative;
-        bottom: 180px;
-        left: 45px;
-    }
-    */
-
-    /*
-    .footer-box {
-        display: grid;
-    }
-    .footer-tel {
-        display: block;
-    }
-    .footer-list + .footer-list-tel {
-        display: none;
-    }
-    */
 }
 @media (max-width: 567px) {
     .bg {
@@ -750,10 +718,8 @@ header {
         padding: 20px 27px;
     }
     .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 26px 15px;
         margin-bottom: 68px;
-        margin-left: 4px;
     }
     .menu-title {
         font-size: 27px;
@@ -763,8 +729,12 @@ header {
     .menu-select {
         font-size: 12px;
         padding: 12px 15px;
-        flex-basis: 142px;
+        flex-basis: 130px;
         margin-right: 13px;
+    }
+    .menu-grid {
+        gap: 50px 15px;
+        margin-bottom: 88px;
     }
     .menu-grid-title {
         font-weight: 700;
@@ -777,18 +747,21 @@ header {
         margin-top: 0;
         margin-bottom: 8px;
     }
-    .menu-grid-cover {
-        height: 260px;
+    .menu-grid-mobile {
+        margin-right: -10px;
     }
-    .menu-grid-mobile .menu-grid-cover {
-        height: 260px;
+    .menu-grid-cover img {
+        height: 220px;
+    }
+    .menu-grid-cover {
+        height: 220px;
     }
 }
 
 @media (max-width: 440px) {
     .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .header {
         padding: 21px 16px 21px 6px;
@@ -797,8 +770,6 @@ header {
         grid-template-columns: repeat(2, 1fr);
         gap: 26px 15px;
         margin-bottom: 68px;
-        margin-left: 4px;
-        margin-right: 6px;
     }
     .footer {
         padding-left: 8px;
@@ -810,23 +781,25 @@ header {
         width: 143px;
         height: 36px;
     }
+    .banner-text {
+        max-width: 240px;
+    }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 26px 0;
         margin-bottom: 68px;
-        margin-left: 4px;
     }
-    .menu-grid-cover {
-        height: 185px;
+    .menu-grid-cover img {
+        height: 180px;
         width: 140px;
     }
-    .menu-grid-mobile .menu-grid-cover {
-        height: 185px;
+    .menu-grid-cover {
+        height: 180px;
         width: 140px;
     }
     .menu-grid-btn {
         padding: 10px 25px;
-        margin-right: 22px;
+        margin-right: 15px;
     }
 }
 @media (max-width: 320px) {
@@ -834,7 +807,6 @@ header {
         background-position: 25% center;
     }
     .bg {
-        width: 320px;
         padding: 58px 0;
     }
 }
