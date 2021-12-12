@@ -623,12 +623,20 @@ header {
     }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 26px 15px;
+        margin-bottom: 88px;
     }
     .menu-grid-mobile {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x proximity;
         scroll-snap-align: start;
+    }
+    .menu-grid-mobile .menu-grid-cover {
+        width: 280px;
+    }
+    .menu-grid-mobile {
+        margin-right: -15px;
     }
     .footer-tel {
         display: none;
@@ -637,7 +645,6 @@ header {
         display: block;
     }
 }
-
 @media (max-width: 765px) {
     nav {
         display: none;
@@ -647,7 +654,9 @@ header {
     }
 }
 @media (max-width: 660px) {
-    
+    .menu-grid-mobile .menu-grid-cover {
+        width: 190px;
+    }
     .footer-box {
         display: flex;
         flex-direction: column;
@@ -717,10 +726,6 @@ header {
     .banner-link {
         padding: 20px 27px;
     }
-    .menu-grid {
-        gap: 26px 15px;
-        margin-bottom: 68px;
-    }
     .menu-title {
         font-size: 27px;
         margin-left: 5px;
@@ -731,10 +736,6 @@ header {
         padding: 12px 15px;
         flex-basis: 130px;
         margin-right: 13px;
-    }
-    .menu-grid {
-        gap: 50px 15px;
-        margin-bottom: 88px;
     }
     .menu-grid-title {
         font-weight: 700;
@@ -751,10 +752,10 @@ header {
         margin-right: -10px;
     }
     .menu-grid-cover img {
-        height: 220px;
+        height: 190px;
     }
     .menu-grid-cover {
-        height: 220px;
+        height: 190px;
     }
 }
 
@@ -766,10 +767,11 @@ header {
     .header {
         padding: 21px 16px 21px 6px;
     }
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 26px 15px;
-        margin-bottom: 68px;
+    .menu-grid-mobile .menu-grid-cover {
+        width: 140px;
+    }
+    .menu-grid-mobile {
+        margin-right: -10px;
     }
     .footer {
         padding-left: 8px;
@@ -785,7 +787,6 @@ header {
         max-width: 240px;
     }
     .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 26px 0;
         margin-bottom: 68px;
     }
