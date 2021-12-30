@@ -363,6 +363,7 @@ header {
     margin: 0;
 }
 .menu-select {
+    appearance: none;
     border: 1px solid #DEDEDE;
     border-radius: 22px;
     font-weight: 400;
@@ -725,7 +726,6 @@ header {
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        scroll-snap-align: start;
         padding-bottom: 50px;
     }
     .menu-grid-mobile .menu-grid-item {
@@ -764,18 +764,18 @@ header {
         gap: 35px 12px;
         margin-bottom: 75px;
     }
-    .menu-grid-cover {
-        height: 290px;
-    }
-    .menu-grid-cover img {
-        height: 320px;
-    }
     .menu-grid-mobile {
-        margin-bottom: 70px;
+        height: 570px;
+        margin-bottom: 50px;
     }
+    .menu-grid-mobile .menu-grid {
+        padding-bottom: 80px;
+    }
+    .menu-grid-cover,
+    .menu-grid-cover img,
     .menu-grid-mobile .menu-grid-cover,
     .menu-grid-mobile .menu-grid-cover img {
-        height: 300px;
+        height: 50vw;
     }
     .footer-box {
         display: flex;
@@ -877,21 +877,8 @@ header {
         gap: 35px 15px;
         margin-bottom: 50px;
     }
-    .menu-grid-cover {
-        height: 250px;
-    }
-    .menu-grid-cover img {
-        height: 280px;
-    }
     .menu-grid-mobile {
-        height: 440px;
-    }
-    .menu-grid-mobile .menu-grid-item {
-        flex: 0 1 210px;
-    }
-    .menu-grid-mobile .menu-grid-cover,
-    .menu-grid-mobile .menu-grid-cover img {
-        height: 260px;
+        height: 460px;
     }
 }
 @media (max-width: 440px) {
@@ -956,22 +943,20 @@ header {
     .footer {
         padding-left: 8px;
     }
-    .menu-grid-mobile {
-        height: 380px;
-        margin-bottom: 70px;
-    }
     .menu-grid-mobile .menu-grid-item {
         flex: 0 0 150px;
-    }
-    .menu-grid-mobile .menu-grid-cover,
-    .menu-grid-mobile .menu-grid-cover img {
-        height: 200px;
     }
     .menu-grid-btn {
         padding: 7px 18px;
     }
+    .menu-grid-mobile {
+        height: 395px;
+    }
 }
 @media (max-width: 360px) {
+    .banner-box {
+        background-position: 20% center;
+    }
     .content {
         padding: 0 0 20px 12px;
     }
@@ -1000,15 +985,5 @@ header {
     .menu-grid-mobile {
         height: 360px;
         margin-bottom: 70px;
-    }
-    .menu-grid-mobile .menu-grid-cover,
-    .menu-grid-mobile .menu-grid-cover img {
-    height: 180px;
-    width: 135px;
-    }
-}
-@media (max-width: 320px) {
-    .banner-box {
-        background-position: 20% center;
     }
 }
