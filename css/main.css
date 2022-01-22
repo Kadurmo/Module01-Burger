@@ -474,7 +474,7 @@ header {
     transition: 0.2s;
 }
 .footer-item {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
 .footer-item h2 {
     font-size: 20px;
@@ -563,7 +563,7 @@ header {
     top: -400px;
     left: 0;
     right: 0;
-    margin: 20px auto 0;
+    margin: 20 auto;
     transition: 0.5s;
     padding: 40px 30px;
     box-sizing: border-box;
@@ -593,7 +593,7 @@ header {
         width: 620px;
         height: 610px;
         position: absolute;
-        right: -35px;
+        right: -30px;
         top: 100px;
     }
     .visual-bg {
@@ -647,7 +647,7 @@ header {
         font-size: 22px;
     }
     .content-title {
-        font-size: 86px;
+        font-size: 82px;
         font-weight: 800;
         margin: 0;
         margin-top: 41px;
@@ -666,8 +666,8 @@ header {
         margin-right: 40px;
     }
     .main img {
-        width: 330px;
-        height: 320px;
+        width: 310px;
+        height: 300px;
         top: 35px;
         right: 0;
         left: 0;
@@ -678,12 +678,12 @@ header {
         margin-bottom: 100px;
     }
     .promo-left {
-        padding-top: 30px;
-        padding-left: 32px;
-        padding-bottom: 50px;
+        padding: 30px 10px 50px 32px;
+        margin-left: 5px;
     }
     .promo-right {
-        padding: 60px 0 60px 30px;
+        padding: 60px 10px 60px 30px;
+        margin-right: 5px;
     }
     .promo-left .promo-discription {
         max-width: 310px;
@@ -734,7 +734,7 @@ header {
         padding-right: 20px;
     }
     .menu-grid-mobile .menu-grid-item {
-        flex: 1 0 240px;
+        flex: 0 0 190px;
     }
     .menu-grid-mobile .menu-grid-cover,
     .menu-grid-mobile .menu-grid-cover img {
@@ -757,6 +757,7 @@ header {
     .content {
         padding: 0px 0 65px 60px;
     }
+    .visual-bg,
     .main img {
         display: none;
     }
@@ -780,7 +781,7 @@ header {
     .menu-grid-cover img,
     .menu-grid-mobile .menu-grid-cover,
     .menu-grid-mobile .menu-grid-cover img {
-        height: 40vw;
+        height: 45vw;
     }
     .footer-box {
         display: flex;
@@ -823,7 +824,8 @@ header {
         padding: 0px 0 30px 30px;
     }
     .promo-left {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        margin-right: 5px;
     }
     .bg {
         padding: 59px 0 62px;
@@ -883,7 +885,7 @@ header {
         margin-bottom: 50px;
     }
     .menu-grid-mobile {
-        height: 90vh;
+        height: 45vh;
     }
 }
 @media (max-width: 440px) {
@@ -914,9 +916,6 @@ header {
         height: 370px;
         top: 190px;
         right: -15px;
-    }
-    .promo-right{
-        margin-top: 30px;
     }
     .promo {
         padding-top: 90px;
@@ -982,7 +981,7 @@ header {
         flex: 0 0 130px;
     }
     .menu-grid-mobile {
-        height: 360px;
+        height: 310px;
         margin-bottom: 70px;
     }
 }
