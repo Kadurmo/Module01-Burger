@@ -563,7 +563,7 @@ header {
     top: -400px;
     left: 0;
     right: 0;
-    margin: 20 auto;
+    margin: 0 auto;
     transition: 0.5s;
     padding: 40px 30px;
     box-sizing: border-box;
