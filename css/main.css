@@ -548,9 +548,9 @@ header {
 .button-up:hover {
     background: #F37335;
 }
-/*------------- MEDIA--------------*/
-    .header-burger{
-        display: block;
+/*------------- BURGER--------------*/
+    .header-burger {
+        display: none;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -741,8 +741,11 @@ header {
     }
 }
 @media (max-width: 768px) {
-    .header-burger, .visual-bg, .main img, nav {
+    .visual-bg, .main img, nav {
         display: none;
+    }
+    .header-burger {
+        display: block;
     }
     .header {
         gap: 20px;
